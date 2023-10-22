@@ -1,0 +1,14 @@
+//Buffer Reader
+import java.io.*;
+class Demo2{
+	public static void main(String args[])throws IOException{
+		BufferedReader br1=new BufferedReader(new InputStreamReader(System.in));
+		BufferedReader br2=new BufferedReader(new InputStreamReader(System.in));
+		String str1=br1.readLine();
+		System.out.println("String "+str1);
+		String str2=br2.readLine();
+		br2.close();
+		System.out.println("String "+str2); 
+	}
+}
+
